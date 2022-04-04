@@ -45,16 +45,12 @@ function fizzBuzz(number) {
   const numArr = [];
   for (let i = 1; i <= number; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-      console.log('FizzBuzz');
       numArr.push('FizzBuzz');
     } else if (i % 3 === 0) {
-      console.log('Fizz');
       numArr.push('Fizz');
     } else if (i % 5 === 0) {
-      console.log('Buzz');
       numArr.push('Buzz');
     } else {
-      console.log(i);
       numArr.push(i);
     }
   }
@@ -62,3 +58,12 @@ function fizzBuzz(number) {
 }
 
 console.log('results: ', fizzBuzz(16));
+
+//input: [ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]
+//expected output: 'BbBb'
+//input: [ 'abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba' ]
+//expected output: 'foo'
+
+// function uniqueString(strings) {
+
+// }
